@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الكتب</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="myFunctions.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>مرحباً بكم في مكتبة الوليد</h1>
+        <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="aboutus.html">من نحن</a>
+            <a href="books.html">الكتب</a>
+        </nav>
+    </header>
+    <main>
+        <section id="books">
+            <h2 style="text-align: center;">قائمة الكتب</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>رمز الكتاب</th>
+                        <th>ISBN</th>
+                        <th>العنوان</th>
+                        <th>السعر</th>
+                        <th>صورة الكتاب</th>
+                        <th>اختيار الكتاب</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>999-99999999</td>
+                        <td>شيفرة دافنتشي</td>
+                        <td>40000 ل.س</td>
+                        <td><img src="img/128868.jpg" alt="شيفرة دافنتشي" style="width: 100px;"></td>
+                        <td>
+                            <button class="select-btn" data-title="شيفرة دافنتشي" data-price="40000 ل.س">اختيار</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>111-1111111111</td>
+                        <td>ترامي الافاق</td>
+                        <td>30000 ل.س</td>
+                        <td><img src="img/277074.jpg" alt="ترامي الافاق" style="width: 100px;"></td>
+                        <td>
+                            <button class="select-btn" data-title="ترامي الافاق" data-price="30000 ل.س">اختيار</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>222-222222222</td>
+                        <td>الهامسون</td>
+                        <td>10000 ل.س</td>
+                        <td><img src="img/300901.jpg" alt="الهامسون" style="width: 100px;"></td>
+                        <td>
+                            <button class="select-btn" data-title="الهامسون" data-price="10000 ل.س">اختيار</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <section id="form-container" style="display: none;">
+                <h2>طلب كتاب</h2>
+                <form id="order-form">
+                    <p><strong>الكتاب المختار:</strong> <span id="selected-book-info"></span></p>
+
+                    <label for="full-name">الاسم الكامل:</label>
+                    <input type="text" id="full-name">
+
+                    <label for="national-id">الرقم الوطني: </label>
+                    <input type="text" id="national-id" placeholder="مكون من 11 رقمًا">
+
+                    <label for="birth-date">تاريخ الميلاد:</label>
+                    <input type="date" id="birth-date">
+
+                    <label for="phone">رقم الموبايل:</label>
+                    <input type="text" id="phone">
+
+                    <label for="email">البريد الإلكتروني:</label>
+                    <input type="text" id="email" placeholder="example@example.com">
+
+                    <button type="submit">إرسال</button>
+                </form>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>مكتبة الوليد </p>
+    </footer>
+</body>
+
+</html>
