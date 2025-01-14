@@ -42,8 +42,17 @@
                         <td><img src="img/128868.jpg" alt="شيفرة دافنتشي" style="width: 100px;"></td>
                         <td>
                             <button class="select-btn" data-title="شيفرة دافنتشي" data-price="40000 ل.س">اختيار</button>
+                            <button class="details-btn">عرض التفاصيل</button>
                         </td>
                     </tr>
+                    <tr class="details-row">
+                        <td colspan="6">
+                            <p><strong>المؤلف:</strong> دان براون</p>
+                            <p><strong>دار النشر:</strong> دار الأمل</p>
+                            <p><strong>معلومات مفصلة:</strong> رواية بوليسية مشوقة تتناول رموزاً وأسراراً تاريخية، تجري أحداثها في أماكن مشهورة في أوروبا. تتمحور حول مؤامرة تدور بين الكنيسة الكاثوليكية وعمليات سرية تاريخية.</p>
+                        </td>
+                    </tr>
+
                     <tr>
                         <td>2</td>
                         <td>111-1111111111</td>
@@ -52,8 +61,17 @@
                         <td><img src="img/277074.jpg" alt="ترامي الافاق" style="width: 100px;"></td>
                         <td>
                             <button class="select-btn" data-title="ترامي الافاق" data-price="30000 ل.س">اختيار</button>
+                            <button class="details-btn">عرض التفاصيل</button>
                         </td>
                     </tr>
+                    <tr class="details-row">
+                        <td colspan="6">
+                            <p><strong>المؤلف:</strong> أحلام مستغانمي</p>
+                            <p><strong>دار النشر:</strong> دار الفارابي</p>
+                            <p><strong>معلومات مفصلة:</strong> رواية عاطفية مشوقة تتحدث عن قصة حب بين شخصين عبر المسافات والزمن، ويستعرض جوانب من الحياة الإنسانية والمشاعر العميقة في علاقات الحب.</p>
+                        </td>
+                    </tr>
+
                     <tr>
                         <td>3</td>
                         <td>222-222222222</td>
@@ -62,6 +80,14 @@
                         <td><img src="img/300901.jpg" alt="الهامسون" style="width: 100px;"></td>
                         <td>
                             <button class="select-btn" data-title="الهامسون" data-price="10000 ل.س">اختيار</button>
+                            <button class="details-btn">عرض التفاصيل</button>
+                        </td>
+                    </tr>
+                    <tr class="details-row">
+                        <td colspan="6">
+                            <p><strong>المؤلف:</strong> ألكسندر هامسون</p>
+                            <p><strong>دار النشر:</strong> دار النشر العالمية</p>
+                            <p><strong>معلومات مفصلة:</strong> قصة تاريخية مشوقة تدور حول مغامرة في أوروبا في العصور الوسطى، تجمع بين الدراما والحب والمغامرة، في إطار مشوّق حول الأساطير الأوروبية.</p>
                         </td>
                     </tr>
                 </tbody>
@@ -70,7 +96,7 @@
             <section id="form-container" style="display: none;">
                 <h2>طلب كتاب</h2>
                 <form id="order-form">
-                    <p><strong>الكتاب المختار:</strong> <span id="selected-book-info"></span></p>
+                    <p><strong>الكتاب المختار:</strong> <span id="selected-book-details"></span></p>
 
                     <label for="full-name">الاسم الكامل:</label>
                     <input type="text" id="full-name">
@@ -93,7 +119,7 @@
         </section>
     </main>
     <footer>
-        <p>مكتبة الوليد </p>
+        <p>مكتبة الوليد</p>
     </footer>
 </body>
 
