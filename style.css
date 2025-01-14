@@ -124,6 +124,24 @@ button:hover {
   background-color: #666;
 }
 
+/* تصميم صفوف التفاصيل */
+.details-row {
+  display: none; /* إخفاء الصف افتراضيًا */
+  background-color: #f9f9f9;
+  font-size: 14px;
+  color: #555;
+  text-align: center; /* توسيط النص */
+  padding: 20px;
+  width: 50%; /* تحديد عرض الصف ليكون في المنتصف */
+  margin: 0 auto; /* توسيط الصف في منتصف الصفحة */
+  border-radius: 8px; /* إضافة زاوية مستديرة */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف */
+}
+
+.details-row.show {
+  display: table-row; /* إظهار الصف عند الحاجة */
+}
+
 /* تصميم الهوامش السفلية */
 footer {
   text-align: center;
